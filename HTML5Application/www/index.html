@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <title>Hello World</title>
+    </head>
+    <body>
+        <div class="app">
+           
+            <div id="header" class="welcome_screen">
+                <img style="display: block;" src="img/header.png" alt="" />
+            </div>
+
+            <div id="prechat" class="welcome_screen">
+            <form>
+              <fieldset>
+                <legend>CHAT</legend>
+
+                <label for="workgroup">ACD Category</label>
+                 <select  id="wgtc" multiple style="display: block;">
+                      <option value="lg" selected>Light Gig</option>
+                      <option value="co">Report Cable Outage</option>
+                    </select>
+
+                    <label for="workgroup" class="required">Technician ID:</label><br/>
+                <select id="tan" multiple style="display: block;">
+                      <option value="volvo" selected>rg123q</option>
+                      <option value="saab">vs098t</option>
+                      <option value="mercedes">dd567p</option>
+                      <option value="audi">vc345w</option>
+                    </select>
+
+                    <label  for="workgroup" class="required">CBR:</label>
+                <input id="tcbr" type="text" name="tcbr" required>
+
+                    <div id="sns">
+                            <label for="workgroup" class="required">BAN:</label> 
+                            <input type="text" id="ban" name="ban" required>
+
+                            <label for="workgroup" class="required">Level 1:</label>
+                        <select id="l1" multiple >	
+                            </select>
+                    </div>
+
+                    <div id="cf">
+                        
+                            <label for="workgroup" >Purpose:</label> 
+                            <textarea id="purpose" name="purpose"></textarea>
+
+                            <label for="workgroup" >Additional Details:</label> 
+                            <textarea id="ad" name="ad"></textarea>
+
+                            <label for="workgroup" >State:</label> 
+                            <textarea id="state" name="state"></textarea>
+
+                            <label for="workgroup" >What details do you have?</label> 
+                            <textarea id="wd" name="wd"></textarea>
+
+                            <label for="workgroup" >Include all info needed by SME (Ticket #/Order #/ Wire Center/ Job ID/ Any Other Details)</label><br/> 
+                            <textarea id="details" name="details"></textarea>
+
+                    </div>
+
+                    <div class="chat-buttons">
+                    <button type="submit" value="Submit" id="chat_btn">Chat</button>
+                            <button type="reset" value="Reset">Reset</button>
+                            <button type="reset" value="Reset">Search</button>
+                    </div>
+              </fieldset>
+            </form>
+            </div>
+
+            <div id="chat" class="welcome_screen">
+                <div id="menu">
+                    <p class="welcome">Welcome to AT&T Smart Chat</p>
+                    <input name="done" type="submit"  id="done" value="Done" />
+                    <div style="clear:both"></div>
+                </div>
+
+                <ul id="chatbox"></ul>
+
+                <form name="message" action="">
+                    <input name="usermsg" type="text" id="input" size="63" />
+                    <input name="submitmsg" type="submit"  id="submitmsg" value="Send" />
+                </form>
+            </div>
+            <div id="footer" class="welcome_screen">
+                    <img style="display: block;" src="img/footer.png" alt="" />
+            </div>
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+                <!-- Modal content -->
+                 <div class="modal-content">
+                    <div class="close">&times;</div>
+                    <p>Some text in the Modal..</p>
+                </div>
+            </div>
+            
+        </div>
+        
+    </body>
+    
+</html>

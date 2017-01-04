@@ -1,0 +1,136 @@
+/*
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ */
+html{ width:100%; height:100%; min-width:100%; max-width:100%;}
+body {
+    font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
+    font-size:12px;
+    width:100%;
+    height:100%;
+    max-width:100%;
+    min-width:100%;
+    margin:0px;
+    padding:0px; 
+    overflow: hidden;
+    position: absolute; 
+    top: 0;
+}
+.app{ width: 100%; height:100%; min-width:100%; max-width:100%;}
+#prechat{width: 100%;  }
+textarea { width: 100%; margin-bottom: 10px;}
+button {float: right; background-color: navy; color:white} 
+select{width:100%;box-sizing:border-box; margin-bottom:10px;}
+label {margin-bottom: 0px; color: orange; font-weight: bold;}
+legend {background-color: orange; color: white; font-weight: bold; margin: 10px;}
+input { width:100%; margin-bottom: 10px; width:100%; box-sizing:border-box; font:12px arial;}
+.required:after { content:" *"; } 
+
+form, p, span {
+    margin:0;
+    padding:0; }
+  
+a {
+    color:#0000FF;
+    text-decoration:none; }
+  
+    a:hover { text-decoration:underline; }
+ 
+#chat, #loginform {
+    margin:0 auto;
+    padding-bottom:25px;
+    background:#EBF4FB;
+  /*  width:504px; */
+    border:1px solid #ACD8F0;
+    display: none;
+}
+#cf{
+    display: none;
+}
+  
+#loginform { padding-top:18px; }
+  
+    #loginform p { margin: 5px; }
+  
+#chatbox {
+    text-align:left;
+    margin:0 auto;
+    margin-bottom:25px;
+    padding:10px;
+    background:#fff;
+    height:270px;
+ /*   width:430px;*/
+    border:1px solid #ACD8F0;
+    overflow:scroll; }
+  
+#usermsg {
+ /*   width:395px;*/
+    border:1px solid #ACD8F0; }
+  
+#submit { width: 60px; }
+  
+.error { color: #ff0000; }
+  
+#menu { padding:12.5px 25px 12.5px 25px; }
+
+.welcome { float:center; color: green; font-weight:bold;font-size: larger; display: inline-block;}
+#header img{ width:100%; height: auto; margin-bottom: 10px;}
+#footer img{ width:100%; height: auto; position: fixed; bottom: 0; margin-top: 10px;}
+  
+.logout { float:right; }
+  
+.msgln { margin:0 0 2px 0; }
+
+.msgBot{ background-color: lightblue; color: red; font-weight:bold;font-size: larger; margin-top:15px;}
+.msgMe{ background-color: lightgreen; color: blue; font-weight:bold;font-size: larger; margin-top:15px;}
+.chat-buttons{ margin-top: 10px;}
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 20%;
+    top: 40%;
+    width: 25%; /* Full width */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 7% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    position: relative;
+    top: -10px;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+ 
